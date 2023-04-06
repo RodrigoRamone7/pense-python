@@ -20,3 +20,4 @@ def cat_twice(part1, part2):
 line1 = 'Bing tiddle '
 line2 = 'tiddle bang.'
 cat_twice(line1, line2)
+
