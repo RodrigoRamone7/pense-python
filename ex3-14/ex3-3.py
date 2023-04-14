@@ -54,29 +54,21 @@ def space4_bar1():# '        |'
     one_four_one(nothing,space,bar)
 
 def line1(): # '+ - - - - + - - - - + - - - - + '
-    line(plus1_dash4,plus1_dash4_plus1,dash4_plus1)
+    one_four_one(nothing,plus1_dash4,plus)
+    end()
     
 def line2(): # '|         |         |         | '
-    line(bar1_space4,bar1_space4_bar1,space4_bar1)
+    one_four_one(nothing,bar1_space4,bar)
+    end()
+
+def grid_one():
+    one_four_one(line1,line2,nothing)
     
-def do_3_times(func):
-    func()
-    func()
-    func()
+def grid():
+    one_four_one(nothing,grid_one,line1)
     
-def grid(f,a):
-    f()
-    do_four(a)
+grid()
     
-    
-def build_grid():
-    grid(line1,line2)
-    
-def print_grid():
-    do_3_times(build_grid)
-    line1()
-    
-print_grid()
     
     
 
